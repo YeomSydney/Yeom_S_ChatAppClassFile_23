@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Lading Page</title>
+</head>
+<body>
+    <h1>Chat App</h1>
+
+    <main id="app">
+        <form>
+            <label for="message">Something to say?</label>
+            <textarea v-model="message" id="textarea" class="message" autocomplete="off"></textarea>
+            <input @click="dispatchMessage" type="submit" value="Send">
+        </form>
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
